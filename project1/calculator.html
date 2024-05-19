@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>A basic calsulator</title>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div class="button-container">
+        <button class="button" onclick="currentdisval = '';document.querySelector(`#display`).value = 
+        currentdisval">C</button>
+        <button class="button" onclick="currentdisval = currentdisval + '1';document.querySelector(`#display`).value = 
+        currentdisval">1</button>
+        <button class="button" onclick="currentdisval = currentdisval + '2';document.querySelector(`#display`).value = 
+        currentdisval">2</button>
+        <button class="button" onclick="currentdisval = currentdisval + '+';document.querySelector(`#display`).value = 
+        currentdisval">+</button>
+        <button class="button" onclick="currentdisval = currentdisval + '3';document.querySelector(`#display`).value = 
+        currentdisval">3</button>
+        <button class="button" onclick="currentdisval = currentdisval + '4';document.querySelector(`#display`).value = 
+        currentdisval">4</button>
+        <button class="button" onclick="currentdisval = currentdisval + '-';document.querySelector(`#display`).value = 
+        currentdisval">-</button>
+        <button class="button" onclick="currentdisval = currentdisval + '5';document.querySelector(`#display`).value = 
+        currentdisval">5</button>
+        <button class="button" onclick="currentdisval = currentdisval + '6';document.querySelector(`#display`).value = 
+        currentdisval">6</button>
+        <button class="button" onclick="currentdisval = currentdisval + '*';document.querySelector(`#display`).value = 
+        currentdisval">*</button>
+        <button class="button" onclick="currentdisval = currentdisval + '7';document.querySelector(`#display`).value = 
+        currentdisval">7</button>
+        <button class="button" onclick="currentdisval = currentdisval + '8';document.querySelector(`#display`).value = 
+        currentdisval">8</button>
+        <button class="button" onclick="currentdisval = currentdisval + '/';document.querySelector(`#display`).value = 
+        currentdisval">/</button>
+        <button class="button" onclick=" let result = eval(currentdisval); currentdisval = result;document.querySelector(`#display`).value = 
+        currentdisval">=</button>
+        <button class="button" onclick="currentdisval = currentdisval + '9';document.querySelector(`#display`).value = 
+        currentdisval">9</button>
+        <button class="button" onclick="currentdisval = currentdisval + '0';document.querySelector(`#display`).value = 
+        currentdisval">0</button>
+        <button class="button" onclick="currentdisval = currentdisval + '.';document.querySelector(`#display`).value = 
+        currentdisval">.</button>
+        </div>
+    </div>
+    <script>
+        let currentdisval = '';
+        document.querySelector(`#display`).value = 
+        currentdisval;
+    </script>
+
+
+</body>
+</html>
