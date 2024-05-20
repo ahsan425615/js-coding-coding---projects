@@ -19,7 +19,10 @@
 // NUMBER CHECKING
 
 let marks = prompt("Enter your marks Out of 100");
-if (marks>=90) {
+if (marks>100) {
+    alert("You can't enter more than 100 MARKS");
+}
+else if (marks>=90) {
     alert("YOU GOT 'A' Grade ");
 }
 else if (marks>=80) {
